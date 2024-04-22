@@ -1,3 +1,11 @@
+"""
+if lst == []:
+        return None
+    else:
+        return lst[-1]
+"""
+
+
 def last_element(lst):
     """Return last item in list (None if list is empty.
 
@@ -12,3 +20,6 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+
+    if len(lst) > 0:
+        return lst[-1]
