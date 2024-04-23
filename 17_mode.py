@@ -1,3 +1,6 @@
+from statistics import mode as mode2
+
+
 def mode(nums):
     """Return most-common number in list.
 
@@ -11,3 +14,5 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    return mode2(nums)
