@@ -21,5 +21,6 @@ def last_element(lst):
         True
     """
 
+# TODO: if lst (a truthy check)
     if len(lst) > 0:
         return lst[-1]
