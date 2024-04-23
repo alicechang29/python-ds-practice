@@ -39,4 +39,32 @@ def list_manipulation(lst, command, location, value=None):
 
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
+
+
+    given a list, command, and location, value
+    need to execute the command at the given location
+    if cmd = add and loc = begin => list.insert(0,value)
+     if cmd = add and loc = end => list.insert(-1,value)
+     if cmd = remove and loc = begin => list.pop(0)
+    if cmd = remove and loc = end => list.pop()
+
     """
+
+    if command == "add":
+        if location == "beginning":
+            lst.insert(0, value)
+        elif location == "end":
+            lst.append(value)
+        else:
+            return None
+    elif command == "remove":
+        if location == "beginning":
+            return lst.pop(0)
+        elif location == "end":
+            return lst.pop()
+        else:
+            return None
+    else:
+        return None
+
+    return lst
