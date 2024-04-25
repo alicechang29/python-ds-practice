@@ -19,7 +19,8 @@ def multiple_letter_count(phrase):
 
     dict = {}
 
-    for ltr in phrase:
-        dict[ltr] = dict.get(ltr, 0)+1
-
+    for elem in phrase:
+        dict[elem] = dict.get(elem, 0) + 1
     return dict
+
+# dictionary.get(element value, default value)
